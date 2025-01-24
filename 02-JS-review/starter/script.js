@@ -143,7 +143,7 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
-//Destructuring
+//Destructuring Objects and Arrays
 
 const book = getBook(2);
 
@@ -156,3 +156,7 @@ const [primaryGenres, secondaryGenres, ...otherGenres] = genres;
 console.log(primaryGenres, secondaryGenres, otherGenres);
 
 const newGenre = ["epic fantasy", ...genres]; //Spread operator allows you to update the content of an array or objects by other adding more items, or modifying the existing once.
+
+//Template literals
+
+const summary = `${title}, a ${pages}-page long book, written by ${author} and published on ${publicationDate}.`;
